@@ -64,5 +64,5 @@ export const WETH = {
     'WBNB',
     'Wrapped BNB'
   ),
-  [ChainId.TESTNET]: new Token(ChainId.TESTNET, '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd', 18, 'WBNB', 'Wrapped BNB')
+  [ChainId.TESTNET]: new Token(ChainId.TESTNET, '0x5Fe5cC0122403f06abE2A75DBba1860Edb762985', 18, 'WBNB', 'Wrapped BNB')
 }

@@ -1,4 +1,6 @@
 import JSBI from 'jsbi'
+import dotenv from "dotenv";
+dotenv.config();
 
 // exports for external consumption
 export type BigintIsh = JSBI | bigint | string
@@ -19,9 +21,8 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const FACTORY_ADDRESS = '0x46E9aD48575d08072E9A05a9BDE4F22973628A8E'
-
-export const INIT_CODE_HASH = '0xfc65440d009dec7c2a9e2707cff95a0ff3bb14653698c4a01003000aa6d1f54a'
+export const FACTORY_ADDRESS = process.env.FACTORY_ADDRESS || '';
+export const INIT_CODE_HASH = process.env.INIT_CODE_HASH || '';
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
